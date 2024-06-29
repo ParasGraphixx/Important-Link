@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Key Points with Animated Buttons</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        font-size: 2em;
+    }
+    .list-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .list-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .list-item-content {
+        flex: 1;
+        text-align: left;
+        font-size: 1.2em;
+        color: #555;
+        display: flex;
+        align-items: center;
+    }
+    .list-item-content i {
+        margin-right: 10px;
+        color: #007bff;
+    }
+    .btn-container {
+        flex: 0 0 auto;
+        text-align: center;
+    }
+    .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        display: inline-block;
+        font-size: 1em;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+    .btn i {
+        margin-right: 8px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Important Links</h2>
+    <div class="list-item">
+        <div class="list-item-content">
+            <i class="fas fa-box"></i>
+            <strong>Packaging Box</strong>
+        </div>
+        <div class="btn-container">
+            <a class="btn" href="https://docs.google.com/spreadsheets/d/1yDbdiu1T-QNwE0U4EO77d__MAFeYgDbKgYP9y1RwOV4/edit?gid=0#gid=0" target="_blank"><i class="fas fa-file-alt"></i> Sheet</a>
+            <a class="btn" href="https://drive.google.com/drive/folders/1p_zy-ecS_oSTsI5O0U-DwumFxHs7enIb?usp=drive_link" target="_blank"><i class="fas fa-folder"></i> Folder</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="list-item-content">
+            <i class="fas fa-share-alt"></i>
+            <strong>Digital Deliverables</strong>
+        </div>
+        <div class="btn-container">
+            <a class="btn" href="https://drive.google.com/drive/folders/1ZN_oEQYlqoY8U_67TXrQgWvqNn1V6__J?usp=sharing" target="_blank"><i class="fas fa-folder"></i> Folder</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="list-item-content">
+            <i class="fas fa-cogs"></i>
+            <strong>Technical Specification</strong>
+        </div>
+        <div class="btn-container">
+            <a class="btn" href="https://drive.google.com/drive/folders/1y5vy7OSy3LERPDw-yMVx-M7UBoTzLwDm?usp=sharing" target="_blank"><i class="fas fa-folder"></i> Folder</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="list-item-content">
+            <i class="fas fa-images"></i>
+            <strong>Website Side Images</strong>
+        </div>
+        <div class="btn-container">
+            <a class="btn" href="https://drive.google.com/drive/folders/1PJGek3aW9Avfai4NpoiYtsf-ujSTfOJd?usp=drive_link" target="_blank"><i class="fas fa-folder"></i> Folder</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="list-item-content">
+            <i class="fas fa-cube"></i>
+            <strong>3D Assets & Concepts</strong>
+        </div>
+        <div class="btn-container">
+            <a class="btn" href="https://drive.google.com/drive/u/0/folders/16Uek3MxMVMArgUcuSeZmGWkfFWoEgDns" target="_blank"><i class="fas fa-folder"></i> Folder</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
